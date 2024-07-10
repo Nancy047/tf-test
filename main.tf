@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("GCP_GKE_SECRET")
+  credentials = file("service-accounts.json")
   project     = "abc"
 }
 
