@@ -18,7 +18,7 @@ jobs:
         GCP_SECRET: ${{ secrets.GCP_GKE_SECRET }}
         GCP_PROJECT: "lumen-b-ctl-047"
       run: |
-        echo "GCP_SECRET" > keys.json 
+        echo "$GCP_SECRET" > keys.json 
     
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
