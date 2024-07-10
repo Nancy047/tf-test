@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "google" {
-  credentials = keys.json
+  credentials = file("keys.json")
   project     = "abc"
 }
 
